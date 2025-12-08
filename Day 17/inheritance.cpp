@@ -33,6 +33,7 @@ int main (){
     cout << f1.color << endl;
     f1.eat();
     f1.breath();
+    f1.swim();
     return 0;
 
 }
