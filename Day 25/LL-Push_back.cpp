@@ -24,7 +24,7 @@ public:
         head = NULL;
         tail = NULL;
     }
-    void push_front(int val) {
+    void push_back(int val) {
         Node* newNode = new Node(val);
 
         if(head == NULL){
@@ -41,9 +41,9 @@ int main(){
     
     List ll;
 
-    ll.push_front(3);
-    ll.push_front(2);
-    ll.push_front(1);
+    ll.push_back(3);
+    ll.push_back(2);
+    ll.push_back(1);
     return 0;
 
 }
