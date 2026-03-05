@@ -1,13 +1,15 @@
 //Create stack using vector...
-
-#include<iostream>
-#include<vector>
+ 
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
+template <class T>
 class Stack{
-    vector<int> vec;
+    vector<T> vec;
 public:
-    void push(int val){
+    void push(T val){
         vec.push_back(val);
     }
     void pop(){
@@ -18,11 +20,11 @@ public:
         vec.pop_back();
     }
 
-    int top(){
-         if(isempty()){
-            cout << "Stack is empty\n";
-            return -1;
-        }
+    T top(){
+        //  if(isempty()){
+        //     cout << "Stack is empty\n";
+        //     return -1;
+        // }
         int lastidx = vec.size()-1;
         return vec[lastidx];
     }
@@ -34,16 +36,17 @@ public:
 
 int main(){
 
-    Stack s;
+    Stack<string> s;
 
-    s.push(3);
-    s.push(2);
-    s.push(1);
+    s.push("Win");
+    s.push("Will");
+    s.push("I");
 
     while(!s.isempty()){
         cout << s.top()<< " ";
         s.pop();
     }
+    cout << endl;
 
     return 0;
 }
