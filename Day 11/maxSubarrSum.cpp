@@ -1,3 +1,5 @@
+//Bruteforce methods applied........
+
 #include<iostream>
 using namespace std;
 
