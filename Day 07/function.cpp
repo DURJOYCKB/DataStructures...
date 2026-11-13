@@ -6,13 +6,13 @@ void  tellHello() {
 }
 
 void  sayHello() {
-    tellHello();
+    tellHello();    // Function call inside another function..
     cout<<"Work done...." << endl;
-    tellHello();
+    tellHello(); 
 }
 
 int main(){
-    sayHello();
+    sayHello();     // Funtion call..
     
     return 0;
 }
