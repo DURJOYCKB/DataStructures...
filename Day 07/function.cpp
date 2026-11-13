@@ -2,12 +2,12 @@
 
 using namespace std;
 void  tellHello() {
-    cout<<"Hello Everyone!!!!\n";
+    cout<<"Hello Everyone!!!" << endl;
 }
 
 void  sayHello() {
     tellHello();
-    cout<<"Work done....\n";
+    cout<<"Work done...." << endl;
     tellHello();
 }
 
