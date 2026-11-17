@@ -8,7 +8,7 @@ bool primeNumber(int n){
         return false;
     }
     for(int i = 2; i<=n-1; i++){
-        if(n % i == 0){
+        if(n % i == 0){        //Non-prime number
             return false;
         } 
     }
